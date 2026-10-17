@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "375606105167",
+    "project_id": "kasba-gig-suite",
+    "storage_bucket": "kasba-gig-suite.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375606105167:android:5618f9621bbd909ef9c63a",
+        "android_client_info": {
+          "package_name": "com.kasba.admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxI8ScCbQoK4gOjFU1aqd75Joy0-7DwDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375606105167:android:ef2b82af934ca0fdf9c63a",
+        "android_client_info": {
+          "package_name": "com.kasba.customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxI8ScCbQoK4gOjFU1aqd75Joy0-7DwDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375606105167:android:729ef87f0f437f7cf9c63a",
+        "android_client_info": {
+          "package_name": "com.kasba.partner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxI8ScCbQoK4gOjFU1aqd75Joy0-7DwDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
