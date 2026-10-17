@@ -28,6 +28,8 @@ jobs:
         cd apps/customer_app
         rm -rf android
         flutter create . --org com.kasba.customer --platforms=android
+        sed -i 's/id "dev.flutter.flutter-gradle-plugin"/id "dev.flutter.flutter-gradle-plugin"\n    id "com.google.gms.google-services" version "4.4.2" apply false/' android/settings.gradle
+        sed -i 's/id "com.android.application"/id "com.android.application"\n    id "com.google.gms.google-services"/' android/app/build.gradle
         flutter pub get
         flutter build apk --release
         mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/customer-app-release.apk
@@ -37,6 +39,8 @@ jobs:
         cd apps/partner_app
         rm -rf android
         flutter create . --org com.kasba.partner --platforms=android
+        sed -i 's/id "dev.flutter.flutter-gradle-plugin"/id "dev.flutter.flutter-gradle-plugin"\n    id "com.google.gms.google-services" version "4.4.2" apply false/' android/settings.gradle
+        sed -i 's/id "com.android.application"/id "com.android.application"\n    id "com.google.gms.google-services"/' android/app/build.gradle
         flutter pub get
         flutter build apk --release
         mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/partner-app-release.apk
@@ -46,6 +50,8 @@ jobs:
         cd apps/admin_app
         rm -rf android
         flutter create . --org com.kasba.admin --platforms=android
+        sed -i 's/id "dev.flutter.flutter-gradle-plugin"/id "dev.flutter.flutter-gradle-plugin"\n    id "com.google.gms.google-services" version "4.4.2" apply false/' android/settings.gradle
+        sed -i 's/id "com.android.application"/id "com.android.application"\n    id "com.google.gms.google-services"/' android/app/build.gradle
         flutter pub get
         flutter build apk --release
         mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/admin-app-release.apk
