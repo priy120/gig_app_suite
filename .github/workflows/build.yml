@@ -26,21 +26,21 @@ jobs:
     - name: Build Customer App APK
       run: |
         cd apps/customer_app
-        flutter create . --org com.kasba.customer --project-name customer_app --platforms=android --force
+        flutter create . --org com.kasba.customer --project-name customer_app --platforms=android
         flutter pub get
         flutter build apk --release
 
     - name: Build Partner App APK
       run: |
         cd apps/partner_app
-        flutter create . --org com.kasba.partner --project-name partner_app --platforms=android --force
+        flutter create . --org com.kasba.partner --project-name partner_app --platforms=android
         flutter pub get
         flutter build apk --release
 
     - name: Build Admin App APK
       run: |
         cd apps/admin_app
-        flutter create . --org com.kasba.admin --project-name admin_app --platforms=android --force
+        flutter create . --org com.kasba.admin --project-name admin_app --platforms=android
         flutter pub get
         flutter build apk --release
 
